@@ -1,8 +1,24 @@
 aid: enghouse
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/enghouse.png
 name: Enghouse
-description: 'Enghouse is a company surfaced as a portfolio company of norwest-venture-partners and added
-  to the API Evangelist network as a stub for enrichment. Sector: unknown. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Enghouse Systems Limited (TSX: ENGH) is a publicly traded Canadian enterprise software and
+  services company headquartered in Markham, Ontario and founded in 1984. It builds mission-critical,
+  communications-focused software delivered on-premise and via the cloud, organized into two segments:
+  the Interactive Management Group (Enghouse Interactive — omnichannel contact centre, customer experience,
+  IVR, video collaboration and AI-assisted agent tooling) and the Asset Management Group (Enghouse Networks —
+  telecom OSS/BSS, media and broadcast, and network monitoring; plus transportation, public-safety and transit
+  systems). The company grows largely through acquisition of specialized software brands.'
 url: https://raw.githubusercontent.com/api-evangelist/enghouse/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +28,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
-- Unknown
+- Software
+- Contact Center
+- Customer Experience
+- Telecommunications
+- Video Conferencing
+- Networks
+- Transportation
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +45,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/enghouse-domain-security.yml
 - type: Website
   url: https://enghouse.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
